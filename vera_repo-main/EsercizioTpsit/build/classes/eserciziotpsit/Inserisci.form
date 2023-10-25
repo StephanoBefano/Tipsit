@@ -57,24 +57,8 @@
                               </Group>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-                              <Component id="jButton2" min="-2" pref="100" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="etichetta1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="etichetta2" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="etichetta3" alignment="1" pref="67" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="etichetta4" alignment="1" min="-2" pref="67" max="-2" attributes="0"/>
-                                  <Component id="etichetta5" alignment="1" min="-2" pref="67" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" pref="100" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jComboBox1" alignment="0" min="-2" pref="100" max="-2" attributes="0"/>
               </Group>
@@ -88,34 +72,21 @@
               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="casella1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="etichetta1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="casella1" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="casella2" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="etichetta2" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="casella2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                  <Group type="103" alignment="0" groupAlignment="3" attributes="0">
-                      <Component id="radio2" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                      <Component id="etichetta3" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="radio2" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="radio1" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
-                      <Component id="etichetta4" max="32767" attributes="0"/>
-                  </Group>
                   <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
                   <Component id="casellaNascita1" alignment="0" pref="42" max="32767" attributes="0"/>
                   <Component id="casellaNascita2" alignment="0" max="32767" attributes="0"/>
@@ -127,7 +98,6 @@
                   <Component id="casellaIscrizione1" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="casellaIscrizione2" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
                   <Component id="casellaIscrizione3" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
-                  <Component id="etichetta5" alignment="3" min="-2" pref="42" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -145,17 +115,10 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JLabel" name="etichetta1">
-    </Component>
-    <Component class="javax.swing.JLabel" name="etichetta2">
-    </Component>
-    <Component class="javax.swing.JLabel" name="etichetta3">
-    </Component>
-    <Component class="javax.swing.JLabel" name="etichetta4">
-    </Component>
-    <Component class="javax.swing.JLabel" name="etichetta5">
-    </Component>
     <Component class="javax.swing.JTextField" name="casellaNascita1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="casellaNascita1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="casellaNascita2">
     </Component>

@@ -4,6 +4,9 @@
  */
 package eserciziotpsit;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  *
  * @author stefano.casti
@@ -26,11 +29,6 @@ public class Inserisci extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        etichetta1 = new javax.swing.JLabel();
-        etichetta2 = new javax.swing.JLabel();
-        etichetta3 = new javax.swing.JLabel();
-        etichetta4 = new javax.swing.JLabel();
-        etichetta5 = new javax.swing.JLabel();
         casellaNascita1 = new javax.swing.JTextField();
         casellaNascita2 = new javax.swing.JTextField();
         casellaNascita3 = new javax.swing.JTextField();
@@ -50,6 +48,12 @@ public class Inserisci extends javax.swing.JPanel {
         radio2 = new javax.swing.JRadioButton();
         jLabel4 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+
+        casellaNascita1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                casellaNascita1ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setText("Data di iscrizione:");
 
@@ -142,19 +146,8 @@ public class Inserisci extends javax.swing.JPanel {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
                                     .addComponent(radio2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(58, 58, 58)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(91, 91, 91)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(etichetta1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(etichetta2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(etichetta3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 67, Short.MAX_VALUE))
-                                    .addComponent(etichetta4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(etichetta5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(58, 58, 58)
+                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(95, 95, 95))
         );
@@ -164,27 +157,18 @@ public class Inserisci extends javax.swing.JPanel {
                 .addGap(65, 65, 65)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(casella1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(etichetta1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(casella1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(casella2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(etichetta2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(casella2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(53, 53, 53)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(radio2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(etichetta3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(radio2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(radio1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(3, 3, 3)
-                        .addComponent(etichetta4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(casellaNascita1, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
                     .addComponent(casellaNascita2)
@@ -194,8 +178,7 @@ public class Inserisci extends javax.swing.JPanel {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(casellaIscrizione1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(casellaIscrizione2, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(casellaIscrizione3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(etichetta5, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(casellaIscrizione3, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(63, 63, 63)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -229,20 +212,42 @@ public class Inserisci extends javax.swing.JPanel {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        //Persona persona= new Persona();
+        
+        
         String s=casella1.getText();  //leggo il valore dalla casella di testo
-        etichetta1.setText(s);  //scrivere nell'etichetta3
+          //scrivere nell'etichetta3
         String str=casella2.getText();
-        etichetta2.setText(str);
+        boolean g=true;
         if(radio1.isSelected()){    //controllo se è selezionato il checkBox
-            s=radio1.getText();   //recupro il valore selezionato
-            etichetta3.setText(s);
+            g=radio1.getAutoscrolls();   //recupro il valore selezionato
+            
         }
         if(radio2.isSelected()){    //controllo se è selezionato il checkBox
-            s=radio2.getText();   //recupro il valore selezionato
-            etichetta3.setText(s);
+            g=radio2.getAutoscrolls();   //recupro il valore selezionato
+            
         }
+        int[] n= new int[2];
+        n[0] = Integer.parseInt(casellaNascita1.getText());
+        n[1] = Integer.parseInt(casellaNascita2.getText());
+        n[2] = Integer.parseInt(casellaNascita3.getText());
+        
+        int[] isc= new int[2];
+        n[0] = Integer.parseInt(casellaIscrizione1.getText());
+        n[1] = Integer.parseInt(casellaIscrizione2.getText());
+        n[2] = Integer.parseInt(casellaIscrizione3.getText());
+        
+        Persona persona= new Persona(s, str, g, n, isc);
+        persona.setNome(s);
+        persona.setCognome(str);
+        persona.setGenere(g);
+        persona.setDataDiNascita(n);
+        persona.setDataDiIscrizione(isc);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void casellaNascita1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_casellaNascita1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_casellaNascita1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -254,11 +259,6 @@ public class Inserisci extends javax.swing.JPanel {
     private javax.swing.JTextField casellaNascita1;
     private javax.swing.JTextField casellaNascita2;
     private javax.swing.JTextField casellaNascita3;
-    private javax.swing.JLabel etichetta1;
-    private javax.swing.JLabel etichetta2;
-    private javax.swing.JLabel etichetta3;
-    private javax.swing.JLabel etichetta4;
-    private javax.swing.JLabel etichetta5;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
